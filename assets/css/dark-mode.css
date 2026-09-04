@@ -1,0 +1,121 @@
+html[data-theme="dark"] {
+    --primary: #54b97d;
+    --primary-dark: #8fd9ad;
+    --secondary: #0d251c;
+    --brand-dark: #0a2118;
+    --accent: #d3df68;
+    --text: #eef5f0;
+    --muted: #adbbb3;
+    --surface: #14251e;
+    --soft: #192d25;
+    --tint: #20392d;
+    --warm: #1d2b25;
+    --border: #31483d;
+    --danger: #ff8f87;
+    --shadow-sm: 0 6px 20px rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 18px 48px rgba(0, 0, 0, 0.32);
+}
+html[data-theme="dark"] .theme-toggle .moon {
+    display: none;
+}
+html[data-theme="dark"] .theme-toggle .sun {
+    display: block;
+}
+html[data-theme="dark"] .rating {
+    color: #e0ca62;
+}
+html[data-theme="dark"] input[type="date"] {
+    color-scheme: dark;
+}
+html[data-theme="dark"] .photo-band img {
+    filter: brightness(0.84);
+}
+html[data-theme="dark"] .highlight .card {
+    background: #eef4f0;
+}
+html[data-theme="dark"] .highlight .card h2,
+html[data-theme="dark"] .highlight .card h3 {
+    color: #17251f;
+}
+html[data-theme="dark"] .highlight .card p {
+    color: #526159;
+}
+html[data-theme="dark"] .map-legend {
+    background: rgba(20, 37, 30, 0.94);
+}
+html[data-theme="dark"] .value-card:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+html[data-theme="dark"] .value-card:hover h3,
+html[data-theme="dark"] .value-card:hover p {
+    color: #0d251c;
+}
+html[data-theme="dark"] .value-card:hover .icon {
+    background: #eef4f0;
+    color: #185b37;
+}
+html[data-theme="dark"] .live-map {
+    border-color: var(--border);
+    background: var(--soft);
+}
+html[data-theme="dark"] .auth-page {
+    background:
+        radial-gradient(circle at 8% 12%, rgba(84, 185, 125, 0.1), transparent 28%),
+        radial-gradient(circle at 94% 88%, rgba(211, 223, 104, 0.06), transparent 28%), #0d1c16;
+}
+html[data-theme="dark"] .auth-card-large {
+    border-color: #2d4439;
+    background: #14251e;
+    box-shadow: 0 26px 70px rgba(0, 0, 0, 0.34);
+}
+html[data-theme="dark"] .auth-form-panel {
+    background: #14251e;
+}
+html[data-theme="dark"] .auth-field input {
+    background: #1b3027;
+    border-color: #385044;
+}
+html[data-theme="dark"] .auth-controls .theme-toggle,
+html[data-theme="dark"] .auth-controls .direction-toggle,
+html[data-theme="dark"] .social-login button {
+    background: #192d25;
+}
+html[data-theme="dark"] .social-login button:hover {
+    background: #20392d;
+}
+html[data-theme="dark"] .site-header.is-scrolled {
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
+}
+html[data-theme="dark"] .btn:hover {
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.24);
+}
+html[data-theme="dark"] .card:hover,
+html[data-theme="dark"] .step:hover,
+html[data-theme="dark"] .service-row:hover {
+    border-color: color-mix(in srgb, var(--primary) 45%, var(--border));
+}
+html[data-theme="dark"] .site-header .header-login,
+html[data-theme="dark"] .mobile-login {
+    border-color: var(--border);
+    background: var(--surface);
+    color: var(--text);
+}
+html[data-theme="dark"] .site-header .header-login:hover,
+html[data-theme="dark"] .mobile-login:hover {
+    border-color: var(--primary);
+    background: var(--tint);
+    color: var(--primary);
+}
+html[data-theme="dark"] .nav > a,
+html[data-theme="dark"] .dropdown-toggle {
+    color: var(--text);
+}
+html[data-theme="dark"] .site-header .brand-name {
+    color: var(--text);
+}
+html[data-theme="dark"] .nav > a:hover,
+html[data-theme="dark"] .nav a[aria-current="page"],
+html[data-theme="dark"] .dropdown.active > .dropdown-toggle {
+    color: var(--primary);
+}

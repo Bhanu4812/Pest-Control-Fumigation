@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Book a Pest-Control Visit | Pestora Shield</title>
+        <meta
+            name="description"
+            content="Request a residential or commercial pest-control inspection."
+        />
+        <link rel="canonical" href="https://example.com/contact.html" />
+        <meta property="og:title" content="Book a Pest-Control Visit" />
+        <meta property="og:description" content="Request a convenient inspection time." />
+        <meta property="og:type" content="website" />
+        <link rel="stylesheet" href="../assets/css/style.css" />
+        <link rel="stylesheet" href="../assets/css/responsive.css" />
+        <link rel="stylesheet" href="../assets/css/dark-mode.css" />
+        <link rel="stylesheet" href="../assets/css/rtl.css" />
+    </head>
+    <body data-page="contact">
+        <div data-header></div>
+        <main>
+            <!-- ========================================
+                 Request a Visit
+            ========================================= -->
+            <section class="inner-hero">
+                <div class="container split">
+                    <div>
+                        <div class="breadcrumb">
+                            <a href="homepage1.html">Home</a>
+                            / Contact
+                        </div>
+                        <span class="eyebrow">Request a Visit</span>
+                        <h1>Book a Pest Control Visit</h1>
+                        <p>
+                            Share a few details and our team will contact you to confirm
+                            availability and the next step.
+                        </p>
+                    </div>
+                    <div class="visual">
+                        <img
+                            src="../assets/images/contact/customer-visit.webp"
+                            width="512"
+                            height="512"
+                            alt="Technician speaking with a homeowner at the start of a visit"
+                        />
+                    </div>
+                </div>
+            </section>
+            <!-- ========================================
+                 Contact Details
+            ========================================= -->
+            <section class="section">
+                <div class="container split booking-layout">
+                    <aside class="contact-details">
+                        <article class="card">
+                            <h2>Contact Details</h2>
+                            <p>
+                                <strong>Phone</strong>
+                                <br />
+                                <a href="tel:+910000000000">+91 00000 00000</a>
+                            </p>
+                            <p>
+                                <strong>Email</strong>
+                                <br />
+                                <a href="mailto:care@pestorashield.example">
+                                    care@pestorashield.example
+                                </a>
+                            </p>
+                            <p>
+                                <strong>Hours</strong>
+                                <br />
+                                Monday–Saturday, 8:00–18:00
+                            </p>
+                        </article>
+                        <article class="card">
+                            <ul class="check-list">
+                                <li>Quick response</li>
+                                <li>Clear appointment confirmation</li>
+                                <li>Residential and commercial visits</li>
+                                <li>Preparation guidance</li>
+                            </ul>
+                        </article>
+                        <div class="contact-side-photo">
+                            <img
+                                src="../assets/images/services/office-inspection.webp"
+                                width="512"
+                                height="512"
+                                loading="lazy"
+                                alt="Pest-control technician inspecting a commercial property"
+                            />
+                        </div>
+                    </aside>
+                    <form class="card form-card booking-form" data-validate novalidate>
+                        <h2>Visit Request</h2>
+                        <div class="form-grid">
+                            <div class="field">
+                                <label for="name">Full Name *</label>
+                                <input id="name" name="name" autocomplete="name" required />
+                                <span class="error"></span>
+                            </div>
+                            <div class="field">
+                                <label for="phone">Phone *</label>
+                                <input
+                                    id="phone"
+                                    name="phone"
+                                    autocomplete="tel"
+                                    inputmode="tel"
+                                    required
+                                />
+                                <span class="error"></span>
+                            </div>
+                            <div class="field">
+                                <label for="email">Email *</label>
+                                <input
+                                    id="email"
+                                    name="email"
+                                    type="email"
+                                    autocomplete="email"
+                                    required
+                                />
+                                <span class="error"></span>
+                            </div>
+                            <div class="field">
+                                <label for="property">Property Type *</label>
+                                <select id="property" required>
+                                    <option value="">Select type</option>
+                                    <option>Home / Apartment</option>
+                                    <option>Office</option>
+                                    <option>Restaurant / Retail</option>
+                                    <option>Commercial</option>
+                                </select>
+                                <span class="error"></span>
+                            </div>
+                            <div class="field">
+                                <label for="service">Service *</label>
+                                <select id="service" required>
+                                    <option value="">Select service</option>
+                                    <option>Cockroach Control</option>
+                                    <option>Termite Control</option>
+                                    <option>Bed Bug Treatment</option>
+                                    <option>Mosquito Control</option>
+                                    <option>Rodent Control</option>
+                                </select>
+                                <span class="error"></span>
+                            </div>
+                            <div class="field">
+                                <label for="date">Preferred Date *</label>
+                                <input id="date" type="date" required />
+                                <span class="error"></span>
+                            </div>
+                            <div class="field">
+                                <label for="time">Preferred Time *</label>
+                                <select id="time" required>
+                                    <option value="">Select window</option>
+                                    <option>Morning</option>
+                                    <option>Afternoon</option>
+                                    <option>Evening</option>
+                                </select>
+                                <span class="error"></span>
+                            </div>
+                            <div class="field">
+                                <label for="area">Area / Locality *</label>
+                                <input id="area" required />
+                                <span class="error"></span>
+                            </div>
+                            <div class="field full">
+                                <label for="address">Address *</label>
+                                <input id="address" autocomplete="street-address" required />
+                                <span class="error"></span>
+                            </div>
+                            <div class="field full">
+                                <label for="problem">Pest Problem *</label>
+                                <textarea id="problem" required></textarea>
+                                <span class="error"></span>
+                            </div>
+                            <div class="field full">
+                                <label for="photo">Optional Image</label>
+                                <input id="photo" type="file" accept="image/*" />
+                                <span class="error"></span>
+                            </div>
+                            <div class="check-field field full">
+                                <input id="agree" type="checkbox" required />
+                                <label for="agree">
+                                    I agree to be contacted about this request.
+                                </label>
+                                <span class="error"></span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Request a Visit</button>
+                        <p class="success" role="status">
+                            Your demo request is validated; no data was sent.
+                        </p>
+                    </form>
+                </div>
+            </section>
+            <!-- ========================================
+                 Coverage Area
+            ========================================= -->
+            <section class="section section-soft">
+                <div class="container split">
+                    <div class="live-map">
+                        <iframe
+                            title="Pestora Shield service location map"
+                            src="https://www.google.com/maps?q=Hyderabad%2C%20Telangana&amp;output=embed"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                    <div>
+                        <span class="eyebrow">Coverage Area</span>
+                        <h2>Local Service Areas</h2>
+                        <p>
+                            Hyderabad, Secunderabad, Banjara Hills, Gachibowli, Kukatpally and
+                            nearby areas.
+                        </p>
+                        <p>
+                            <strong>Not sure we cover your area?</strong>
+                            Call us to check.
+                        </p>
+                        <div class="map-actions">
+                            <a
+                                class="btn btn-primary"
+                                href="https://www.google.com/maps/dir/?api=1&amp;destination=Hyderabad%2C%20Telangana"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                Get Directions
+                            </a>
+                            <a class="btn btn-outline" href="tel:+910000000000">Call to Check</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ========================================
+                 What to Expect
+            ========================================= -->
+            <section class="section">
+                <div class="container">
+                    <div class="section-head center">
+                        <span class="eyebrow">What to Expect</span>
+                        <h2>A Clear Booking Experience</h2>
+                    </div>
+                    <div class="grid grid-4">
+                        <article class="card">
+                            <h3>Quick Response</h3>
+                            <p>Requests reviewed during operating hours.</p>
+                        </article>
+                        <article class="card">
+                            <h3>Trained Technicians</h3>
+                            <p>Prepared professionals for every visit.</p>
+                        </article>
+                        <article class="card">
+                            <h3>Every Property</h3>
+                            <p>Home and business service planning.</p>
+                        </article>
+                        <article class="card">
+                            <h3>Scheduled Visits</h3>
+                            <p>A practical confirmed appointment window.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!-- ========================================
+                 Booking FAQ
+            ========================================= -->
+            <section class="section section-warm">
+                <div class="container split">
+                    <div>
+                        <span class="eyebrow">Booking FAQ</span>
+                        <h2>Before Your Visit</h2>
+                        <div class="faq-list">
+                            <div class="faq-item">
+                                <button
+                                    class="faq-button"
+                                    aria-expanded="false"
+                                    aria-controls="bf1"
+                                >
+                                    When will you confirm?
+                                </button>
+                                <div class="faq-panel" id="bf1">
+                                    <p>We respond during operating hours based on availability.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button
+                                    class="faq-button"
+                                    aria-expanded="false"
+                                    aria-controls="bf2"
+                                >
+                                    Is this a confirmed appointment?
+                                </button>
+                                <div class="faq-panel" id="bf2">
+                                    <p>No. The team confirms the final date and time.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button
+                                    class="faq-button"
+                                    aria-expanded="false"
+                                    aria-controls="bf3"
+                                >
+                                    Can I reschedule?
+                                </button>
+                                <div class="faq-panel" id="bf3">
+                                    <p>Contact us early to discuss another window.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button
+                                    class="faq-button"
+                                    aria-expanded="false"
+                                    aria-controls="bf4"
+                                >
+                                    Should I send a photo?
+                                </button>
+                                <div class="faq-panel" id="bf4">
+                                    <p>It is optional and can clarify visible signs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <aside class="highlight">
+                        <h2>Still Have a Question?</h2>
+                        <p>Call now or submit your visit request.</p>
+                        <a class="btn btn-primary" href="tel:+910000000000">Call Now</a>
+                    </aside>
+                </div>
+            </section>
+        </main>
+        <div data-footer></div>
+        <script defer src="../assets/js/main.js"></script>
+    </body>
+</html>

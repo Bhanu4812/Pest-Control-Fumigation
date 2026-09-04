@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Sign In | Pestora Shield</title>
+        <meta
+            name="description"
+            content="Sign in to continue your Pestora Shield pest-control booking."
+        />
+        <link rel="canonical" href="https://example.com/login.html" />
+        <meta property="og:title" content="Sign In to Pestora Shield" />
+        <meta property="og:description" content="Continue your pest-control visit booking." />
+        <meta property="og:type" content="website" />
+        <script>
+            try {
+                document.documentElement.dataset.theme =
+                    localStorage.getItem("pestora-theme") ||
+                    (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+                document.documentElement.dir = localStorage.getItem("pestora-direction") || "ltr";
+            } catch (e) {}
+        </script>
+        <link rel="stylesheet" href="../assets/css/style.css" />
+        <link rel="stylesheet" href="../assets/css/responsive.css" />
+        <link rel="stylesheet" href="../assets/css/dark-mode.css" />
+        <link rel="stylesheet" href="../assets/css/rtl.css" />
+    </head>
+    <body class="auth-page" data-page="login">
+        <div class="auth-controls" aria-label="Display controls">
+            <button class="theme-toggle" type="button" title="Switch color theme">
+                <svg class="moon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                        d="M20 15.2A8.4 8.4 0 0 1 8.8 4a8.5 8.5 0 1 0 11.2 11.2Z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    />
+                </svg>
+                <svg class="sun" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle
+                        cx="12"
+                        cy="12"
+                        r="4"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    />
+                    <path
+                        d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                    />
+                </svg>
+            </button>
+            <button class="direction-toggle" type="button" title="Switch text direction">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                        d="M4 8h13m0 0-3-3m3 3-3 3M20 16H7m0 0 3-3m-3 3 3 3"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                </svg>
+            </button>
+        </div>
+        <main class="standalone-auth">
+            <div class="auth-card-large">
+                <div class="auth-form-panel">
+                    <!-- ========================================
+                         Content
+                    ========================================= -->
+                    <section class="auth-brand-section" aria-label="Pestora Shield brand">
+                        <div class="auth-brand">
+                            <span class="auth-brand-mark">
+                                <svg viewBox="0 0 32 32" aria-hidden="true">
+                                    <path
+                                        d="M16 3 27 7v8c0 7-4.6 11.4-11 14-6.4-2.6-11-7-11-14V7l11-4Z"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                    />
+                                    <path
+                                        d="M10 17c5.5 0 9-2.8 12-7-1 7-4.3 11-10 12"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                    />
+                                </svg>
+                            </span>
+                            <span>
+                                <strong>Pestora Shield</strong>
+                                <small>Pest Control &amp; Fumigation</small>
+                            </span>
+                        </div>
+                        <span class="auth-eyebrow">Welcome back</span>
+                        <h1>Sign in to Pestora Shield</h1>
+                        <p>
+                            Sign in to continue your booking and manage your pest-control visit
+                            details.
+                        </p>
+                    </section>
+                    <!-- ========================================
+                         Content
+                    ========================================= -->
+                    <section class="auth-form-section" aria-label="Login form">
+                        <form data-validate data-redirect="contact.html" novalidate>
+                            <div class="auth-field">
+                                <label for="login-email">Email address</label>
+                                <input
+                                    id="login-email"
+                                    name="email"
+                                    type="email"
+                                    autocomplete="email"
+                                    placeholder="you@example.com"
+                                    required
+                                />
+                                <span class="error"></span>
+                            </div>
+                            <div class="auth-field">
+                                <label for="login-password">Password</label>
+                                <div class="auth-password">
+                                    <input
+                                        id="login-password"
+                                        name="password"
+                                        type="password"
+                                        autocomplete="current-password"
+                                        placeholder="Enter your password"
+                                        required
+                                    />
+                                    <button
+                                        class="password-toggle"
+                                        type="button"
+                                        aria-label="Show password"
+                                    >
+                                        <svg
+                                            class="eye-open"
+                                            viewBox="0 0 24 24"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                            />
+                                            <circle
+                                                cx="12"
+                                                cy="12"
+                                                r="2.5"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                            /></svg
+                                        ><svg
+                                            class="eye-closed"
+                                            viewBox="0 0 24 24"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                d="m3 3 18 18M10.6 6.2A10 10 0 0 1 12 6c6.5 0 10 6 10 6a16 16 0 0 1-3 3.7M6.2 6.2C3.4 8 2 12 2 12s3.5 6 10 6a9.7 9.7 0 0 0 3-.5"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                            />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <span class="error"></span>
+                            </div>
+                            <div class="auth-options">
+                                <label class="auth-check">
+                                    <input type="checkbox" id="remember" />
+                                    <span>Remember me</span>
+                                </label>
+                                <a href="contact.html">Forgot Password?</a>
+                            </div>
+                            <button class="btn btn-primary auth-submit" type="submit">
+                                Sign In
+                            </button>
+                            <p class="success" role="status">
+                                Login successful. Opening your booking form…
+                            </p>
+                        </form>
+                    </section>
+                    <!-- ========================================
+                         Content
+                    ========================================= -->
+                    <section class="auth-social-section" aria-label="Social sign in">
+                        <div class="auth-divider"><span>Or continue with</span></div>
+                        <div class="social-login">
+                            <button type="button" aria-label="Continue with Google">
+                                <span class="social-g">G</span>
+                                Google
+                            </button>
+                            <button type="button" aria-label="Continue with Apple">
+                                <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M16.7 12.8c0-2.4 2-3.6 2.1-3.7a4.5 4.5 0 0 0-3.5-1.9c-1.5-.2-2.9.9-3.7.9-.8 0-2-1-3.3-.9A4.9 4.9 0 0 0 4.2 9.8c-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.5 1.3-.1 1.8-.8 3.4-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.2 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-3.3-1.3-3.3-4.3ZM14.3 5.6A4.3 4.3 0 0 0 15.3 2a4.4 4.4 0 0 0-3 1.5 4 4 0 0 0-1 3.5 3.7 3.7 0 0 0 3-1.4Z"
+                                        fill="currentColor"
+                                    />
+                                </svg>
+                                Apple
+                            </button>
+                            <button type="button" aria-label="Continue with Facebook">
+                                <span class="social-f">f</span>
+                                Facebook
+                            </button>
+                        </div>
+                    </section>
+                    <!-- ========================================
+                         Pestora Shield
+                    ========================================= -->
+                    <section class="auth-switch-section">
+                        <p>
+                            Don’t have an account?
+                            <a href="register.html">Create Account</a>
+                        </p>
+                    </section>
+                </div>
+                <!-- ========================================
+                     Pestora Shield
+                ========================================= -->
+                <section class="auth-image-panel" aria-label="Pestora Shield service reassurance">
+                    <img
+                        src="../assets/images/services/office-inspection.webp"
+                        width="512"
+                        height="512"
+                        alt="Pest-control technician carefully inspecting a modern business property"
+                    />
+                    <div class="auth-image-overlay">
+                        <span class="auth-eyebrow">Pestora Shield</span>
+                        <h2>Professional protection for homes and businesses</h2>
+                        <p>
+                            Certified technicians, careful inspections and targeted treatments
+                            designed around your property.
+                        </p>
+                        <div class="auth-stats">
+                            <span>
+                                <strong>10+</strong>
+                                Years Experience
+                            </span>
+                            <span>
+                                <strong>5,000+</strong>
+                                Properties Served
+                            </span>
+                            <span>
+                                <strong>4.9</strong>
+                                Customer Rating
+                            </span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <script defer src="../assets/js/main.js"></script>
+    </body>
+</html>
