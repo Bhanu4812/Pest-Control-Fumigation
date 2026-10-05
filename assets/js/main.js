@@ -12,19 +12,9 @@
     const icons = {
         shield: /* HTML */ `
             <svg viewBox="0 0 32 32" aria-hidden="true">
-                <path
-                    d="M16 3 27 7v8c0 7-4.6 11.4-11 14-6.4-2.6-11-7-11-14V7l11-4Z"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                />
-                <path
-                    d="M10 17c5.5 0 9-2.8 12-7-1 7-4.3 11-10 12"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                />
+                <path fill="currentColor" d="M16 2 28 6.5V15c0 7.2-4.7 12-12 15C8.7 27 4 22.2 4 15V6.5L16 2Z" />
+                <path fill="#fff" d="M10 19c-1-6 4-9 13-10-1 8-5 13-11 12l-2-2Z" />
+                <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="m10 23 9-10" />
             </svg>
         `,
         moon: /* HTML */ `
@@ -133,11 +123,11 @@
                     <a href="chemical-safety.html" ${active("safety")}><span class="mobile-nav-icon">${mobileIcons.safety}</span>Chemical Safety</a>
                     <a href="contact.html" ${active("contact")}><span class="mobile-nav-icon">${mobileIcons.contact}</span>Contact</a>
                     <div class="mobile-nav-actions">
-                        <a class="btn mobile-login" href="login.html">
+                        <a class="btn btn-primary mobile-login" href="login.html">
                             <span class="mobile-action-icon">${mobileIcons.user}</span>
                             Login
                         </a>
-                        <a class="btn btn-primary mobile-book" href="contact.html">Book a Visit</a>
+                        <a class="btn btn-outline mobile-book" href="contact.html">Book a Visit</a>
                     </div>
                 </nav>
                 <div class="header-actions">
@@ -149,8 +139,8 @@
                     >
                         ${icons.direction}
                     </button>
-                    <a class="btn header-login" href="login.html">Login</a>
-                    <a class="btn btn-primary header-book" href="contact.html">Book a Visit</a>
+                    <a class="btn btn-primary header-login" href="login.html">Login</a>
+                    <a class="btn btn-outline header-book" href="contact.html">Book a Visit</a>
                     <button
                         class="menu-toggle"
                         type="button"

@@ -1026,6 +1026,24 @@ html[dir="rtl"] .custom-select-trigger:after {
 .pricing-grid .btn {
     margin-top: auto;
 }
+body[data-page="home1"] .pricing-grid .card {
+    text-align: center;
+}
+body[data-page="home1"] .pricing-grid .check-list li {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding-inline: 0;
+}
+body[data-page="home1"] .pricing-grid .check-list li::before {
+    position: static;
+}
+body[data-page="home1"] .pricing-grid .card > .btn {
+    align-self: center;
+}
+html:not([data-theme="dark"]) body[data-page="home1"] .highlight .btn-outline {
+    color: #fff;
+}
 .recommended {
     padding-top: 64px;
 }
@@ -2503,4 +2521,68 @@ textarea {
     color: var(--primary-dark);
     font-size: 0.76rem;
     font-weight: 700;
+}
+
+/* Refined brand and consistent header action hierarchy in both themes. */
+.logo .logo-mark {
+    background: transparent;
+    border-radius: 0;
+    padding: 3px;
+}
+.logo .brand-name {
+    letter-spacing: -0.035em;
+    font-weight: 800;
+}
+html .site-header .header-actions .header-login,
+html .site-header .mobile-nav-actions .mobile-login {
+    border-color: var(--primary);
+    background: var(--primary);
+    color: #fff;
+}
+html .site-header .header-actions .header-login:hover,
+html .site-header .mobile-nav-actions .mobile-login:hover {
+    border-color: var(--primary-dark);
+    background: var(--primary-dark);
+    color: #fff;
+}
+html .site-header .header-actions .header-book,
+html .site-header .mobile-nav-actions .mobile-book {
+    border: 1px solid var(--primary);
+    background: transparent;
+    color: var(--primary);
+}
+html .site-header .header-actions .header-book:hover,
+html .site-header .mobile-nav-actions .mobile-book:hover {
+    background: var(--tint);
+    color: var(--primary);
+}
+
+/* Package columns and footer brand spacing. */
+body[data-page="packages"] .pricing-grid {
+    row-gap: 24px;
+}
+body[data-page="packages"] .pricing-grid > .card {
+    display: grid;
+    border-width: 2px;
+    grid-template-rows: subgrid;
+    grid-row: span 5;
+    row-gap: 0;
+    padding-top: 72px;
+}
+body[data-page="packages"] .pricing-grid h2 {
+    margin-bottom: 16px;
+}
+body[data-page="packages"] .pricing-grid .price {
+    margin-top: 20px;
+}
+body[data-page="packages"] .pricing-grid .btn {
+    justify-self: start;
+    align-self: end;
+}
+body[data-page="packages"] .table-wrap th {
+    text-align: center;
+    vertical-align: middle;
+}
+.site-footer .footer-grid .logo {
+    margin-bottom: 18px;
 }

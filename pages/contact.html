@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="../assets/css/responsive.css" />
         <link rel="stylesheet" href="../assets/css/dark-mode.css" />
         <link rel="stylesheet" href="../assets/css/rtl.css" />
+        <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg" />
     </head>
     <body data-page="contact">
         <div data-header></div>
@@ -96,13 +97,13 @@
                         <div class="form-grid">
                             <div class="field">
                                 <label for="name">Full Name *</label>
-                                <input id="name" name="name" autocomplete="name" required />
+                                <input id="name" placeholder="Enter your full name" name="name" autocomplete="name" required />
                                 <span class="error"></span>
                             </div>
                             <div class="field">
                                 <label for="phone">Phone *</label>
                                 <input
-                                    id="phone"
+                                    id="phone" placeholder="Enter your phone number"
                                     name="phone"
                                     autocomplete="tel"
                                     inputmode="tel"
@@ -113,7 +114,7 @@
                             <div class="field">
                                 <label for="email">Email *</label>
                                 <input
-                                    id="email"
+                                    id="email" placeholder="you@example.com"
                                     name="email"
                                     type="email"
                                     autocomplete="email"
@@ -124,7 +125,7 @@
                             <div class="field">
                                 <label for="property">Property Type *</label>
                                 <select id="property" required>
-                                    <option value="">Select type</option>
+                                    <option value="">Select your property type</option>
                                     <option>Home / Apartment</option>
                                     <option>Office</option>
                                     <option>Restaurant / Retail</option>
@@ -135,7 +136,7 @@
                             <div class="field">
                                 <label for="service">Service *</label>
                                 <select id="service" required>
-                                    <option value="">Select service</option>
+                                    <option value="">Select the service you need</option>
                                     <option>Cockroach Control</option>
                                     <option>Termite Control</option>
                                     <option>Bed Bug Treatment</option>
@@ -152,7 +153,7 @@
                             <div class="field">
                                 <label for="time">Preferred Time *</label>
                                 <select id="time" required>
-                                    <option value="">Select window</option>
+                                    <option value="">Select your preferred time</option>
                                     <option>Morning</option>
                                     <option>Afternoon</option>
                                     <option>Evening</option>
@@ -161,17 +162,17 @@
                             </div>
                             <div class="field">
                                 <label for="area">Area / Locality *</label>
-                                <input id="area" required />
+                                <input id="area" placeholder="Enter your area or locality" required />
                                 <span class="error"></span>
                             </div>
                             <div class="field full">
                                 <label for="address">Address *</label>
-                                <input id="address" autocomplete="street-address" required />
+                                <input id="address" placeholder="House / flat number, street and city" autocomplete="street-address" required />
                                 <span class="error"></span>
                             </div>
                             <div class="field full">
                                 <label for="problem">Pest Problem *</label>
-                                <textarea id="problem" required></textarea>
+                                <textarea id="problem" placeholder="Describe the pest, where you have seen it and how long it has been present" required></textarea>
                                 <span class="error"></span>
                             </div>
                             <div class="field full">
