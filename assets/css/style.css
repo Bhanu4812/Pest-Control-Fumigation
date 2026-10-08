@@ -1027,7 +1027,24 @@ html[dir="rtl"] .custom-select-trigger:after {
     margin-top: auto;
 }
 body[data-page="home1"] .pricing-grid .card {
+    padding-top: 64px;
+    border-width: 2px;
     text-align: center;
+}
+@media (min-width: 821px) {
+    body[data-page="home1"] .pricing-grid {
+        row-gap: 0;
+    }
+    body[data-page="home1"] .pricing-grid .card {
+        display: grid;
+        grid-row: span 5;
+        grid-template-rows: subgrid;
+        row-gap: 0;
+    }
+    body[data-page="home1"] .pricing-grid .card > .btn {
+        justify-self: center;
+        align-self: end;
+    }
 }
 body[data-page="home1"] .pricing-grid .check-list li {
     display: flex;
@@ -1283,6 +1300,13 @@ html:not([data-theme="dark"]) body[data-page="home1"] .highlight .btn-outline {
     align-items: center;
     gap: 14px;
     margin-top: 20px;
+}
+.customer-proof-grid .quote {
+    display: flex;
+    flex-direction: column;
+}
+.customer-proof-grid .quote .customer-row {
+    margin-top: auto;
 }
 .customer-avatar {
     width: 52px;

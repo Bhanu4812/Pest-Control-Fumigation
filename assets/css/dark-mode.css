@@ -30,6 +30,11 @@ html[data-theme="dark"] input[type="date"] {
 html[data-theme="dark"] .photo-band img {
     filter: brightness(0.84);
 }
+html[data-theme="dark"] body[data-page="home2"] .coverage-cta > .highlight,
+html[data-theme="dark"] body[data-page="services"] aside.highlight {
+    background: #235a40;
+    box-shadow: inset 0 0 0 1px rgba(84, 185, 125, 0.45);
+}
 html[data-theme="dark"] .highlight .card {
     background: #eef4f0;
 }
