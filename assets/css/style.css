@@ -896,6 +896,28 @@ html[dir="rtl"] .custom-select-trigger:after {
     display: grid;
     gap: 7px;
 }
+.footer-contact > a,
+.footer-contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+.footer-contact svg {
+    flex: 0 0 18px;
+    width: 18px;
+    height: 18px;
+    margin-top: 0.25em;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+.footer-contact > a > span,
+.footer-contact-item > span {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
 .socials {
     display: flex;
     gap: 8px;
@@ -1027,9 +1049,26 @@ html[dir="rtl"] .custom-select-trigger:after {
     margin-top: auto;
 }
 body[data-page="home1"] .pricing-grid .card {
-    padding-top: 64px;
+    padding-top: 18px;
     border-width: 2px;
     text-align: center;
+}
+body[data-page="home1"] .pricing-grid .recommended::before {
+    content: none;
+}
+body[data-page="home1"] .plan-badge-row {
+    min-height: 38px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+body[data-page="home1"] .plan-badge {
+    padding: 4px 9px;
+    border-radius: 99px;
+    background: var(--primary);
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 800;
 }
 @media (min-width: 821px) {
     body[data-page="home1"] .pricing-grid {
@@ -1037,7 +1076,7 @@ body[data-page="home1"] .pricing-grid .card {
     }
     body[data-page="home1"] .pricing-grid .card {
         display: grid;
-        grid-row: span 5;
+        grid-row: span 6;
         grid-template-rows: subgrid;
         row-gap: 0;
     }
@@ -1302,11 +1341,17 @@ html:not([data-theme="dark"]) body[data-page="home1"] .highlight .btn-outline {
     margin-top: 20px;
 }
 .customer-proof-grid .quote {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 38px 1fr auto;
+    gap: 16px;
+}
+.customer-proof-grid .quote::before,
+.customer-proof-grid .quote > p {
+    margin: 0;
 }
 .customer-proof-grid .quote .customer-row {
-    margin-top: auto;
+    margin-top: 0;
+    align-self: end;
 }
 .customer-avatar {
     width: 52px;
